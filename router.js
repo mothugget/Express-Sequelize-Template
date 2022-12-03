@@ -1,8 +1,8 @@
 'use strict';
 const router = require('express').Router();
-const stuff = require('./controllers/stuffController');
+const stuffController = require('./controllers/stuffController');
 
-router.get('/stuff', stuff.getStuff);
-router.post('/stuff', stuff.postStuff);
+router.get('/stuff', stuffController.getStuff);
+router.post('/stuff', stuffController.postStuff);
 
 module.exports = router;
